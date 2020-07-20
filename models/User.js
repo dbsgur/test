@@ -1,8 +1,7 @@
 var mongoose = require('mongoose');
 const Schema = mongoose.Schema;
-const bcrpyt = require('bcrypt');
-const saltRounds = 10;
-const jwt = require('jsonwebtoken');
+//const saltRounds = 10;
+//const jwt = require('jsonwebtoken');
 
 const userSchema = new Schema({
     member: {
