@@ -1,7 +1,8 @@
 var mongoose = require('mongoose');
 const Schema = mongoose.Schema;
-//const saltRounds = 10;
-//const jwt = require('jsonwebtoken');
+const bcrpyt = require('bcrypt');
+const saltRounds = 10;       // 이거를 이용해서 비밀번호 암호화
+const jwt = require('jsonwebtoken');
 
 const userSchema = new Schema({
     member: {
